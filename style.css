@@ -1218,3 +1218,32 @@ footer {
     font-size: 16px;
   }
 }
+
+/* Em telas pequenas, blur pesado e animações contínuas custam muito
+   mais CPU/GPU do que em desktop — reduz para evitar travamento. */
+@media (max-width: 768px) {
+  .header {
+    backdrop-filter: blur(8px);
+  }
+
+  .glow {
+    filter: blur(60px);
+  }
+
+  .float-chip {
+    backdrop-filter: blur(6px);
+    animation: none;
+  }
+
+  .phone-mockup,
+  .tag .dot {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
