@@ -1,120 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BoraPostar</title>
+  <title>BoraPostar — Figurinhas premium para Stories do Instagram</title>
+  <meta name="description" content="Packs de figurinhas premium para Stories do Instagram. Deixe seu perfil mais profissional, aumente o engajamento e venda mais — sem precisar de design.">
+
+  <link rel="icon" href="LOGO-BORAPOSTAR-branca.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container nav">
 
-      <div class="logo-area">
-        <img src="LOGO-BORAPOSTAR-branca.png" alt="">
-      </div>
+      <a href="#topo" class="logo-area">
+        <img src="LOGO-BORAPOSTAR-branca.png" alt="BoraPostar">
+      </a>
 
-      <nav>
+      <nav id="mainNav">
+        <a href="#vitrine">Vitrine</a>
         <a href="#beneficios">Benefícios</a>
-        <a href="#packs">Packs</a>
-        <a href="#precos">Preços</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a href="#precos" class="btn-primary">
-        Quero meus packs
+      <a href="#planos" class="btn-primary" data-ticto="hero">
+        Quero meus Packs
       </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
 
     </div>
   </header>
 
 
-  <section class="hero">
+  <section class="hero" id="topo">
 
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
 
     <div class="container hero-grid">
 
-      <div class="hero-content">
+      <div class="hero-content reveal">
 
         <div class="tag">
-          Packs atualizados semanalmente
+          <span class="dot"></span>
+          Packs atualizados toda semana
         </div>
 
-        <h2>
-          Seus stories
+        <h1>
+          Seus Stories
           <span>nunca mais</span>
-          serão sem graça.
-        </h2>
+          serão ignorados.
+        </h1>
 
         <p>
-          Figurinhas e packs prontos para transformar seus stories em algo mais profissional, moderno e impossível de ignorar.
+          Figurinhas premium para Instagram que transformam qualquer perfil em uma marca
+          profissional. Mais autoridade, mais engajamento e mais clientes — sem precisar
+          saber nada de design.
         </p>
 
         <div class="hero-buttons">
-          <a href="#precos" class="btn-primary large">
-            Quero meus packs
+          <a href="#planos" class="btn-primary large" data-ticto="hero">
+            Quero meus Packs
           </a>
 
-          <a href="#packs" class="btn-secondary large">
+          <a href="#vitrine" class="btn-secondary large">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12L19 12M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Ver demonstração
           </a>
         </div>
 
-        <div class="numbers">
-
-          <div>
-            <h3>+5k</h3>
-            <span>Downloads</span>
-          </div>
-
-          <div>
-            <h3>+800</h3>
-            <span>Clientes</span>
-          </div>
-
-          <div>
-            <h3>4.9★</h3>
-            <span>Avaliação</span>
-          </div>
-
+        <div class="trust-row">
+          <div class="stars">★★★★★ <span>4.9/5</span></div>
+          <div class="trust-sep"></div>
+          <div>+15.000 downloads</div>
+          <div class="trust-sep"></div>
+          <div>+3.200 clientes</div>
         </div>
 
       </div>
 
 
-      <div class="hero-card">
+      <div class="hero-visual reveal">
 
-        <div class="card-header">
+        <div class="float-chip chip-1">
+          <span class="chip-icon">☀️</span>
           <div>
-            <h4>Stories Premium</h4>
-            <small>Pack Black 2026</small>
-          </div>
-
-          <div class="badge">
-            Atualizado
+            <strong>Bom dia</strong>
+            <small>+ 230 usos hoje</small>
           </div>
         </div>
 
-
-        <div class="story-grid">
-
-          <div class="story-item">AGENDA ABERTA</div>
-          <div class="story-item">BOM DIA</div>
-          <div class="story-item">HORÁRIOS</div>
-          <div class="story-item">PROMOÇÃO</div>
-
+        <div class="float-chip chip-2">
+          <span class="chip-icon">📅</span>
+          <div>
+            <strong>Agenda aberta</strong>
+            <small>Engajamento +38%</small>
+          </div>
         </div>
 
+        <img
+          src="celular-borapostar-final.png"
+          alt="Story do Instagram com a figurinha Bom dia e Agenda aberta do BoraPostar"
+          class="phone-mockup"
+          width="508"
+          height="1037"
+        >
+
+        <div class="float-chip chip-3">
+          <span class="chip-icon">⭐</span>
+          <div>
+            <strong>Avaliação 4.9</strong>
+            <small>+3.200 clientes</small>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="problem" id="problema">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>O problema</span>
+        <h2>
+          Seu Instagram pode estar
+          <strong>te fazendo perder clientes.</strong>
+        </h2>
+        <p class="section-sub">
+          Todos os dias, pessoas chegam até seu perfil — e saem sem se conectar com sua marca.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+
+        <div class="problem-col reveal">
+          <span class="problem-label problem-label-bad">Como você está agora</span>
+
+          <ul class="problem-list">
+            <li><span class="ico ico-bad">✕</span> Stories sem identidade visual</li>
+            <li><span class="ico ico-bad">✕</span> Layouts genéricos que ninguém lembra</li>
+            <li><span class="ico ico-bad">✕</span> Pouco profissional perto da concorrência</li>
+            <li><span class="ico ico-bad">✕</span> Baixo engajamento e poucas respostas</li>
+            <li><span class="ico ico-bad">✕</span> Horas perdidas tentando criar arte do zero</li>
+            <li><span class="ico ico-bad">✕</span> Perfil parece comum, igual a todos os outros</li>
+          </ul>
+        </div>
+
+        <div class="problem-arrow reveal">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 12L19 12M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="problem-col reveal">
+          <span class="problem-label problem-label-good">Com o BoraPostar</span>
+
+          <ul class="problem-list">
+            <li><span class="ico ico-good">✓</span> Identidade visual premium em segundos</li>
+            <li><span class="ico ico-good">✓</span> Stories que prendem atenção de verdade</li>
+            <li><span class="ico ico-good">✓</span> Perfil com cara de marca profissional</li>
+            <li><span class="ico ico-good">✓</span> Mais interação em enquetes e caixinhas</li>
+            <li><span class="ico ico-good">✓</span> Pronto para usar, sem precisar criar nada</li>
+            <li><span class="ico ico-good">✓</span> Você se destaca de quem ainda posta sem cuidado</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="showcase" id="vitrine">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>Vitrine</span>
+        <h2>
+          Uma figurinha para
+          <strong>cada momento do seu dia.</strong>
+        </h2>
+        <p class="section-sub">
+          Dezenas de categorias prontas para vender, engajar e profissionalizar seu perfil.
+        </p>
+      </div>
+
+      <div class="showcase-grid reveal">
+        <div class="showcase-card"><span>☀️</span>Bom dia</div>
+        <div class="showcase-card"><span>🌤️</span>Boa tarde</div>
+        <div class="showcase-card"><span>🌙</span>Boa noite</div>
+        <div class="showcase-card"><span>📅</span>Agenda aberta</div>
+        <div class="showcase-card"><span>🔥</span>Promoção</div>
+        <div class="showcase-card"><span>⭐</span>Feedback</div>
+      </div>
+
+      <div class="showcase-footer reveal">
+        <p>+ centenas de outras figurinhas dentro dos packs completos</p>
+        <a href="#planos" class="btn-secondary" data-ticto="hero">Ver todos os packs</a>
       </div>
 
     </div>
@@ -122,287 +216,466 @@
 
 
   <section class="benefits" id="beneficios">
-
-    <div class="benefit-grid">
-
-      <div class="benefit-card">
-        <div class="icon">⚡</div>
-        <h3>Stories profissionais</h3>
-        <p>
-          Transforme qualquer story simples em algo premium e mais chamativo.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="icon">🎯</div>
-        <h3>Mais autoridade</h3>
-        <p>
-          Passe mais profissionalismo e aumente o valor percebido da sua marca.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="icon">🚀</div>
-        <h3>Pronto para postar</h3>
-        <p>
-          Baixe as figurinhas e comece a usar imediatamente nos stories.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="icon">📱</div>
-        <h3>Funciona no celular</h3>
-        <p>
-          Use diretamente pelo celular de forma rápida e prática.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="icon">🔥</div>
-        <h3>Mais destaque</h3>
-        <p>
-          Stories mais bonitos que prendem atenção e aumentam interação.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="icon">✨</div>
-        <h3>Atualizações frequentes</h3>
-        <p>
-          Novas figurinhas e packs adicionados constantemente.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="packs" id="packs">
-
     <div class="container">
 
-      <div class="section-title">
-        <span>O que você recebe</span>
-
+      <div class="section-title reveal">
+        <span>Benefícios</span>
         <h2>
-          Packs criados para
-          <strong>vender mais.</strong>
+          Tudo que você ganha
+          <strong>a partir do primeiro story.</strong>
         </h2>
       </div>
 
+      <div class="benefit-grid">
 
-      <div class="packs-grid">
-
-        <div class="pack-card">
-          <div class="pack-image">AGENDA ABERTA</div>
-
-          <div class="pack-content">
-            <span>BoraPostar</span>
-            <h3>Agenda aberta</h3>
-            <p>
-              Templates modernos prontos para usar no Instagram.
-            </p>
-          </div>
+        <div class="benefit-card reveal">
+          <div class="icon">🏆</div>
+          <h3>Mais profissionalismo</h3>
+          <p>Transforme qualquer story simples em algo premium, alinhado com sua marca.</p>
         </div>
 
-
-        <div class="pack-card">
-          <div class="pack-image">BOM DIA</div>
-
-          <div class="pack-content">
-            <span>BoraPostar</span>
-            <h3>Bom dia</h3>
-            <p>
-              Designs modernos e visual premium para stories.
-            </p>
-          </div>
+        <div class="benefit-card reveal">
+          <div class="icon">🎯</div>
+          <h3>Mais autoridade</h3>
+          <p>Passe a confiança que faz o cliente escolher você em vez do concorrente.</p>
         </div>
 
+        <div class="benefit-card reveal">
+          <div class="icon">⏱️</div>
+          <h3>Economia de tempo</h3>
+          <p>Esqueça horas tentando criar arte. Baixe e poste em menos de um minuto.</p>
+        </div>
 
-        <div class="pack-card">
-          <div class="pack-image">PROMOÇÃO</div>
+        <div class="benefit-card reveal">
+          <div class="icon">💎</div>
+          <h3>Stories mais bonitos</h3>
+          <p>Visual moderno, elegante e consistente em todos os seus posts.</p>
+        </div>
 
-          <div class="pack-content">
-            <span>BoraPostar</span>
-            <h3>Promoções</h3>
-            <p>
-              Stories criados para chamar atenção rapidamente.
-            </p>
-          </div>
+        <div class="benefit-card reveal">
+          <div class="icon">📈</div>
+          <h3>Maior percepção de valor</h3>
+          <p>Clientes pagam mais por quem parece — e é — mais profissional.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="icon">🗂️</div>
+          <h3>Mais organização</h3>
+          <p>Categorias prontas para cada situação: promoção, agenda, feedback e mais.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="icon">🚀</div>
+          <h3>Pronto para usar</h3>
+          <p>Sem curva de aprendizado. Baixe a figurinha e cole direto por cima do seu story.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="icon">🔄</div>
+          <h3>Atualizações frequentes</h3>
+          <p>Novas figurinhas e packs adicionados constantemente, sem custo extra nos planos.</p>
         </div>
 
       </div>
 
     </div>
-
   </section>
 
 
-  <section class="pricing" id="precos">
-
+  <section class="how-it-works" id="como-funciona">
     <div class="container">
 
-      <div class="section-title">
-        <span>Planos</span>
-
+      <div class="section-title reveal">
+        <span>Como funciona</span>
         <h2>
-          Escolha o pack ideal
+          Do clique ao story publicado
+          <strong>em menos de 5 minutos.</strong>
+        </h2>
+      </div>
+
+      <div class="steps-grid">
+
+        <div class="step-card reveal">
+          <span class="step-number">01</span>
+          <h3>Comprar</h3>
+          <p>Escolha seu pack ou plano e finalize com pagamento seguro pela Ticto.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <span class="step-number">02</span>
+          <h3>Baixar</h3>
+          <p>Receba acesso imediato e baixe as figurinhas direto no celular ou computador.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <span class="step-number">03</span>
+          <h3>Postar</h3>
+          <p>Adicione ao seu story em segundos e veja o engajamento decolar.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="pricing" id="planos">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>Planos</span>
+        <h2>
+          Escolha o acesso ideal
           <strong>para o seu Instagram.</strong>
         </h2>
+        <p class="section-sub">
+          Compre packs separados ou economize com um plano de acesso completo.
+        </p>
       </div>
-
 
       <div class="pricing-grid">
 
-        <div class="price-card">
-
+        <div class="price-card reveal">
           <h3>Starter</h3>
+          <p class="price-desc">Ideal para começar a profissionalizar seus stories.</p>
 
           <div class="price">
-            R$19,90
+            R$19<span>,90</span>
+            <small>pagamento único</small>
           </div>
 
           <ul>
-            <li>Pack básico</li>
-            <li>Figurinhas prontas</li>
-            <li>Acesso imediato</li>
+            <li><span class="ico ico-good">✓</span> 1 pack à sua escolha</li>
+            <li><span class="ico ico-good">✓</span> +50 figurinhas prontas</li>
+            <li><span class="ico ico-good">✓</span> Acesso imediato</li>
+            <li><span class="ico ico-good">✓</span> Compatível com celular</li>
           </ul>
 
-          <a href="#" class="btn-secondary full">
-            Comprar agora
-          </a>
-
+          <a href="#" class="btn-secondary full" data-ticto="starter">Comprar agora</a>
         </div>
 
 
-        <div class="price-card featured">
+        <div class="price-card featured reveal">
+          <div class="featured-tag">MAIS VENDIDO</div>
 
-          <div class="featured-tag">
-            MAIS VENDIDO
-          </div>
-
-          <h3>Pack PRO</h3>
+          <h3>PRO</h3>
+          <p class="price-desc">O favorito de quem quer resultado todos os dias.</p>
 
           <div class="price">
-            R$39,90
+            R$39<span>,90</span>
+            <small>por mês</small>
           </div>
 
           <ul>
-            <li>+500 figurinhas</li>
-            <li>Templates editáveis</li>
-            <li>Atualizações semanais</li>
-            <li>Suporte</li>
+            <li><span class="ico ico-good">✓</span> Acesso a todas as categorias</li>
+            <li><span class="ico ico-good">✓</span> +500 figurinhas premium</li>
+            <li><span class="ico ico-good">✓</span> Arquivos em alta resolução</li>
+            <li><span class="ico ico-good">✓</span> Atualizações semanais</li>
+            <li><span class="ico ico-good">✓</span> Suporte prioritário</li>
           </ul>
 
-          <a href="#" class="btn-primary full">
-            Quero o PRO
-          </a>
-
+          <a href="#" class="btn-primary full" data-ticto="pro">Quero o PRO</a>
         </div>
 
 
-        <div class="price-card">
-
+        <div class="price-card reveal">
           <h3>Black</h3>
+          <p class="price-desc">Acesso vitalício para quem quer tudo, sem mensalidade.</p>
 
           <div class="price">
-            R$67,90
+            R$67<span>,90</span>
+            <small>pagamento único</small>
           </div>
 
           <ul>
-            <li>Tudo do PRO</li>
-            <li>Pacotes exclusivos</li>
-            <li>Stories premium</li>
-            <li>Atualizações VIP</li>
+            <li><span class="ico ico-good">✓</span> Tudo do plano PRO</li>
+            <li><span class="ico ico-good">✓</span> Acesso vitalício</li>
+            <li><span class="ico ico-good">✓</span> Pacotes exclusivos Black</li>
+            <li><span class="ico ico-good">✓</span> Atualizações VIP para sempre</li>
           </ul>
 
-          <a href="#" class="btn-secondary full">
-            Comprar agora
-          </a>
+          <a href="#" class="btn-secondary full" data-ticto="black">Comprar agora</a>
+        </div>
 
+      </div>
+
+      <div class="trust-strip reveal">
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z" stroke="currentColor" stroke-width="1.6"/></svg> Compra segura</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg> Pagamento protegido</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Garantia de 7 dias</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 11-12h-7l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Entrega automática</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6"/></svg> Compatível com celular</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="comparison">
+    <div class="container small">
+
+      <div class="section-title reveal">
+        <span>Comparativo</span>
+        <h2>A diferença é <strong>visível no primeiro story.</strong></h2>
+      </div>
+
+      <div class="comparison-table reveal">
+
+        <div class="comparison-row comparison-head">
+          <div>Característica</div>
+          <div class="col-bad">Sem BoraPostar</div>
+          <div class="col-good">Com BoraPostar</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Identidade visual</div>
+          <div class="col-bad">✕ Inconsistente</div>
+          <div class="col-good">✓ Padronizada e premium</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Tempo de produção</div>
+          <div class="col-bad">✕ Horas criando arte do zero</div>
+          <div class="col-good">✓ Menos de 1 minuto</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Engajamento</div>
+          <div class="col-bad">✕ Baixo</div>
+          <div class="col-good">✓ Alto, com enquetes e caixinhas</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Percepção de autoridade</div>
+          <div class="col-bad">✕ Amador</div>
+          <div class="col-good">✓ Profissional</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Atualizações</div>
+          <div class="col-bad">✕ Nenhuma</div>
+          <div class="col-good">✓ Novos packs todo mês</div>
+        </div>
+
+        <div class="comparison-row">
+          <div>Custo por story</div>
+          <div class="col-bad">✕ Alto (freelancer/agência)</div>
+          <div class="col-good">✓ Centavos por story</div>
         </div>
 
       </div>
 
     </div>
+  </section>
 
+
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>Depoimentos</span>
+        <h2>
+          Quem já usa, não posta
+          <strong>mais do jeito antigo.</strong>
+        </h2>
+      </div>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"Meus stories ficaram completamente diferentes. Os clientes comentam que meu perfil parece de outro nível agora."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#3b6bff,#5b85ff)">CS</div>
+            <div>
+              <strong>Camila Souza</strong>
+              <small>Lash Designer</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"Uso as figurinhas de agenda e últimos horários todo dia. Minha agenda fecha muito mais rápido desde que comecei."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#5b85ff,#0c2d96)">RL</div>
+            <div>
+              <strong>Rafael Lima</strong>
+              <small>Barbeiro</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"Antes eu perdia um tempão tentando criar arte do zero. Hoje eu só baixo a figurinha e colo por cima do story. Economizo um tempo absurdo."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#3b6bff,#0c2d96)">JA</div>
+            <div>
+              <strong>Juliana Alves</strong>
+              <small>Esteticista</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"Meus pacientes passaram a interagir muito mais nas enquetes e na caixinha de perguntas. O consultório parece mais moderno."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#5b85ff,#3b6bff)">PH</div>
+            <div>
+              <strong>Pedro Henrique</strong>
+              <small>Dentista</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"O pack de antes e depois é incrível para mostrar resultado de dieta. Recebo elogios toda semana sobre o visual do perfil."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#0c2d96,#5b85ff)">BC</div>
+            <div>
+              <strong>Bruna Costa</strong>
+              <small>Nutricionista</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars-row">★★★★★</div>
+          <p>"Assinei o plano PRO e nunca mais fiquei sem ideia pra postar. Vale muito mais do que custa."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:linear-gradient(135deg,#3b6bff,#5b85ff)">TM</div>
+            <div>
+              <strong>Thiago Martins</strong>
+              <small>Personal Trainer</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
 
   <section class="faq" id="faq">
-
     <div class="container small">
 
-      <div class="section-title">
+      <div class="section-title reveal">
         <span>FAQ</span>
-
-        <h2>
-          Dúvidas frequentes
-        </h2>
+        <h2>Perguntas frequentes</h2>
       </div>
 
-
-      <div class="faq-list">
+      <div class="faq-list reveal">
 
         <details>
-          <summary>Como recebo os packs?</summary>
-          <p>
-            Após a compra você recebe acesso imediato.
-          </p>
+          <summary>Como recebo os packs após a compra?<span class="chevron">▾</span></summary>
+          <p>O acesso é liberado automaticamente após a confirmação do pagamento. Você recebe um link para baixar tudo na hora.</p>
         </details>
 
-
         <details>
-          <summary>Funciona no celular?</summary>
-          <p>
-            Sim. Você consegue usar tudo pelo celular.
-          </p>
+          <summary>Funciona no celular?<span class="chevron">▾</span></summary>
+          <p>Sim. Todos os packs foram pensados para uso 100% no celular, sem precisar de computador.</p>
         </details>
 
+        <details>
+          <summary>Preciso saber design para usar?<span class="chevron">▾</span></summary>
+          <p>Não. As figurinhas já vêm prontas, no formato certo para Stories. Você só baixa e cola por cima do seu story no Instagram.</p>
+        </details>
 
         <details>
-          <summary>Preciso de Canva Pro?</summary>
-          <p>
-            Não. A maioria dos packs funciona no Canva gratuito.
-          </p>
+          <summary>As figurinhas podem ser personalizadas?<span class="chevron">▾</span></summary>
+          <p>As figurinhas são entregues prontas, no padrão visual BoraPostar. Elas não são editáveis — é só baixar e usar, como um sticker em cima do story.</p>
+        </details>
+
+        <details>
+          <summary>Posso usar os packs para mais de um perfil?<span class="chevron">▾</span></summary>
+          <p>Sim, você pode usar as figurinhas em quantos perfis administrar, inclusive de clientes.</p>
+        </details>
+
+        <details>
+          <summary>Qual a diferença entre comprar um pack e assinar um plano?<span class="chevron">▾</span></summary>
+          <p>O pack dá acesso a uma categoria específica. Os planos liberam acesso a diversas categorias e a todas as atualizações futuras.</p>
+        </details>
+
+        <details>
+          <summary>As figurinhas são atualizadas?<span class="chevron">▾</span></summary>
+          <p>Sim, lançamos novidades constantemente. Quem está nos planos PRO ou Black recebe tudo sem custo extra.</p>
+        </details>
+
+        <details>
+          <summary>O pagamento é seguro?<span class="chevron">▾</span></summary>
+          <p>Sim. Todo o checkout é processado pela Ticto, uma das plataformas de pagamento mais seguras do mercado.</p>
+        </details>
+
+        <details>
+          <summary>Existe garantia?<span class="chevron">▾</span></summary>
+          <p>Sim, você tem 7 dias de garantia. Se não gostar, devolvemos 100% do seu dinheiro, sem burocracia.</p>
         </details>
 
       </div>
 
     </div>
-
   </section>
 
 
   <section class="final-cta">
+    <div class="glow glow-1"></div>
 
     <div class="container small">
 
-      <h2>
-        O próximo nível dos seus stories começa aqui.
+      <div class="urgency-tag reveal">⚡ Oferta de lançamento por tempo limitado</div>
+
+      <h2 class="reveal">
+        Pare de postar igual todo mundo.
       </h2>
 
-      <p>
-        Pare de postar stories sem impacto. Comece a chamar atenção de verdade.
+      <p class="reveal">
+        Seus concorrentes já estão usando figurinhas premium nos stories.
+        A cada dia sem o BoraPostar é um cliente que escolhe outra marca.
       </p>
 
-      <a href="#precos" class="btn-primary large">
-        Quero transformar meu Instagram
+      <a href="#planos" class="btn-primary xlarge reveal" data-ticto="hero">
+        Quero transformar meu Instagram agora
       </a>
 
-    </div>
+      <div class="trust-row center reveal">
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Garantia de 7 dias</div>
+        <div class="trust-sep"></div>
+        <div>Pagamento seguro</div>
+        <div class="trust-sep"></div>
+        <div>Acesso imediato</div>
+      </div>
 
+    </div>
   </section>
 
 
   <footer>
     <div class="container footer-content">
-      <p>© 2026 BoraPostar — Todos os direitos reservados.</p>
+
+      <div class="footer-top">
+        <img src="LOGO-BORAPOSTAR-branca.png" alt="BoraPostar" class="footer-logo">
+        <p>Figurinhas premium para Stories do Instagram.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#vitrine">Vitrine</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <p class="footer-bottom">
+        © 2026 BoraPostar — Todos os direitos reservados. Pagamento processado de forma segura via Ticto.
+      </p>
+
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
-```
-
