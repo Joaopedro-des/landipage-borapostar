@@ -409,10 +409,12 @@ nav#mainNav a:hover::after {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 560px;
 }
 
 .phone-mockup {
+  display: block;
   width: 290px;
   max-width: 100%;
   height: auto;
