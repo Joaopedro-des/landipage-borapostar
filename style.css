@@ -55,13 +55,17 @@ a {
 
 /* ---------- reveal animation ---------- */
 
-.reveal {
+/* Visível por padrão: o conteúdo nunca deve depender do JS para aparecer.
+   A classe .js-ready (adicionada pelo script.js só quando ele já carregou)
+   é que liga o efeito de entrada — assim, numa rede lenta, o pior caso é
+   "sem animação", nunca "conteúdo escondido". */
+.reveal.js-ready {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal.active {
+.reveal.js-ready.active {
   opacity: 1;
   transform: translateY(0);
 }

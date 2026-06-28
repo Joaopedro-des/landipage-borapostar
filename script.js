@@ -34,7 +34,9 @@ mainNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => mainNav.classList.remove("open"));
 });
 
-// Animação de entrada (fade + slide) ao rolar
+// Animação de entrada (fade + slide) ao rolar.
+// O conteúdo já está visível por padrão (CSS); aqui só ligamos o efeito
+// quando o script já carregou, então nunca deixa nada escondido esperando JS.
 const revealEls = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -49,4 +51,7 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 
-revealEls.forEach((el) => observer.observe(el));
+revealEls.forEach((el) => {
+  el.classList.add("js-ready");
+  observer.observe(el);
+});
